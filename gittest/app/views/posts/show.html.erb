@@ -1,0 +1,40 @@
+<div id="contents">
+  <main id="main">
+     <section>
+        <div id="back">
+        <h2><%= @post.title %></h2>
+        <p><%= @post.created_at %></p>
+        <p><%= simple_format(@post.content) %></p>
+
+          <section class="sec">
+            <h3><%= @post.subtitle1 %></h3>
+            <p><%= @post.subcontent1 %></p>
+          </section>
+
+          <section class="sec">
+            <h3><%= @post.subtitle2 %></h3>
+            <p><%= @post.subcontent2 %></p>
+          </section>
+
+          <section class="sec">
+            <h3><%= @post.subtitle3 %></h3>
+            <p><%= @post.subcontent3 %></p>
+          </section>
+        
+        </div>
+       
+       </section>
+
+  </main>
+
+  <div id="side">
+     <nav id="tags">
+     <p>tag</p>
+        <ul>
+           <li>企業訪問</li>
+           <li>雑記</li>
+           <li>などなど</li>
+        </ul>
+     </nav>
+  </div>
+</div>

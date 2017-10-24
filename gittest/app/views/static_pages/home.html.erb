@@ -1,0 +1,27 @@
+<div id="contents">
+  <main id="main">
+        <% @post.each do |obj| %>
+        <section><a href="/posts/<%= obj.id %>">
+        <h2><%= obj.title %></h2>
+        <p><%= obj.created_at %></p>
+        <p class="ellipsis"><%= obj.content %></p>
+
+        </a>
+        </section>
+        <% end %>
+      
+      
+
+  </main>
+
+  <div id="side">
+     <nav id="tags">
+     <p>tag</p>
+        <ul>
+           <li>企業訪問</li>
+           <li>雑記</li>
+           <li>などなど</li>
+        </ul>
+     </nav>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<header id="header">
+  <div class="inner">
+    <h1 id="logo"><a href="/home"><%= image_tag("coworkimg_400x400.png", :size => "80x70", :alt => "アイコン") %></a></h1>
+
+    <p id="catch">このブログでは主に私たちのサークル「IT COWORK」の活動について記録しています。<br>
+                  何か御用などありましたら右の連絡先までお問い合わせください。
+    </p>
+
+    <dl id="info">
+			<dt>Gmail:</dt><dd>@example</dd>
+			<dt>Twitter:</dt><dd>@example</dd>
+			<dt>Facebook:</dt><dd>@example</dd>
+		</dl>
+
+  </div>
+
+  <nav id="gnav">
+      <ul class="inner">
+        <li><%= link_to "Home", root_path,{ :class=> "link"} %></li>
+        <li><%= link_to "Help", help_path, { :class=> "link"} %></li>
+        <li><%= link_to "Members", about_path, { :class=> "link"} %></li>
+        <li><%= link_to "Posts",  '/posts/new', { :class=> "link"} %></li>
+      </ul>
+  </nav>
+
+</header>

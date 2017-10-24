@@ -1,0 +1,32 @@
+<h1>Create a Post</h1>
+
+<div>
+  <%= form_for(@post) do |f| %>
+
+    <%= f.label :title %>
+    <%= f.text_field :title, class: "post_form" %>
+
+    <%= f.label :content %>
+    <%= f.text_area :content, class: "post_form" %>
+
+    <%= f.label :subtitle1 %>
+    <%= f.text_field :subtitle1, class: "post_form" %>
+
+    <%= f.label :subcontent1 %>
+    <%= f.text_area :subcontent1, class: "post_form" %>
+
+    <%= f.label :subtitle2 %>
+    <%= f.text_field :subtitle2, class: "post_form" %>
+
+    <%= f.label :subcontent2 %>
+    <%= f.text_area :subcontent2, class: "post_form" %>
+
+    <%= f.label :subtitle3 %>
+    <%= f.text_field :subtitle3, class: "post_form" %>
+
+    <%= f.label :subcontent3 %>
+    <%= f.text_area :subcontent3, class: "post_form" %>
+
+    <%= f.submit "Create a Post", class: "submit_botton" %>
+  <% end %>
+</div>
